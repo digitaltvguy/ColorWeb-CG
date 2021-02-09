@@ -11,10 +11,12 @@ This specification uses the existing iCCP chunk to unambiguously signal the colo
 An existing W3C group note (https://www.w3.org/TR/png-hdr-pq/) specifies an approach which is limited: it supports signaling of only the ITU BT.2100 PQ EOTF and uses magic values in the iCCP chunk to signal color spaces.
 
 [H.273](https://www.itu.int/rec/T-REC-H.273/en) specifies a controlled vocabulary for the parameterization of
-color space information:
+color space and signal range information:
 * Color Primaries
 * Transfer Function
 * Matrix Coefficients (only required if essence is stored as Y’CbCr)
+* Signal Range Flags
+*
 
 Use [ITU-T Series H Supplement 19](https://www.itu.int/rec/T-REC-H.Sup19-201910-I) “recommendations” to signal the controlled vocabulary for image formats commonly used for baseband linear broadcasts or file-based Video-on-Demand(VOD) services.
 * Tables within this document summarize values most commonly used in broadcast for 47 different standards documents including H.273
